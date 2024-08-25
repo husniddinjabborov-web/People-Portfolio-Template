@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.site-container {
+    margin: auto;
+    width: min(100%, 1600px);
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-color: #ddd;
+}
+
+/* aside */
+.site-container aside {
+    background-color: white;
+    flex: 1;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+aside h1 {
+    text-align: center;
+    padding: 100px 0;
+    font-size: xx-large;
+    font-weight: 100;
+    color: gray;
+    text-transform: uppercase;
+}
+
+aside .aside-nav a {
+    display: block;
+    font-size: large;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+}
+
+aside .aside-nav a:hover {
+    background-color: #cac9c9;
+}
+
+/* main */
+.site-container main {
+    background-color: #ddd;
+    flex: 4;
+    height: 100%;
+    overflow: auto;
+}
+
+.site-container main::-webkit-scrollbar {
+    width: 0;
+}
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+}
+
+
+main .container .item {
+    flex: 1 1 30%;
+    background-color: white;
+    opacity: 0.7;
+    transition: all 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+main .container .item:hover {
+    opacity: 1;
+}
+
+.sled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin-top: 15px;
+}
+
+.sled .sled-item {
+    color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.sled-item:hover {
+    background-color: black;
+    color: white;
+}
+
+.sled .sled-item:nth-child(2) {
+    background-color: black;
+    color: white;
+}
+
+.sled .sled-item:nth-child(2):hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.about {
+    background-color: #616161;
+    color: #ddd;
+    padding-bottom: 50px;
+    padding: 20px;
+}
+
+.about>h2 {
+    text-align: center;
+    padding: 30px;
+    color: white;
+    display: block;
+}
+
+.about-img {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    width: min(100%, 700px);
+    margin: auto;
+}
+
+
+.about-body {
+    margin-bottom: 30px;
+    width: min(100%, 700px);
+    margin: auto;
+}
+
+.about-body h2,
+.about-body p {
+    padding: 16px 0 0 0;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.about hr {
+    width: min(100%, 700px);
+    margin: 30px auto;
+}
+
+.technical {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: large;
+    width: min(100%, 700px);
+    margin: auto;
+}
+
+.technical h2 {
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.technical p {
+    font-size: 0.9em;
+}
+
+
+.technical .photography {
+    width: 100%;
+    height: 35px;
+    background-color: white;
+}
+
+.technical .photography .photo {
+    height: 100%;
+    background-color: #9E9E9E;
+    color: black;
+    width: calc(100% - 5%);
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: inherit;
+    line-height: 35px;
+}
+
+.technical .w-design {
+    width: 100%;
+    height: 35px;
+    background-color: white;
+}
+
+.technical .w-design .design {
+    height: 100%;
+    background-color: #9E9E9E;
+    color: black;
+    width: calc(100% - 15%);
+    text-align: center;
+    border-radius: inherit;
+    font-size: 0.9em;
+    line-height: 35px;
+}
+
+.technical .photoshop {
+    width: 100%;
+    height: 35px;
+    background-color: white;
+}
+
+.technical .photoshop .photosh {
+    height: 100%;
+    background-color: #9E9E9E;
+    color: black;
+    width: calc(100% - 20%);
+    text-align: center;
+    border-radius: inherit;
+    font-size: 0.9em;
+    line-height: 35px;
+}
+
+.technical a {
+    text-decoration: none;
+    color: gray;
+    background-color: white;
+    display: inline-block;
+    padding: 12px;
+    flex-direction: none;
+    width: fit-content;
+    margin-top: 12px;
+    font-size: large;
+}
+
+.technical a:hover {
+    background-color: #ddd;
+}
+
+.technical a i {
+    margin-right: 6px;
+}
+
+.much {
+    width: min(100%, 700px);
+    margin: auto;
+}
+
+.much h2 {
+    font-weight: 500;
+    padding: 0 0 30px 0;
+
+}
+
+.much .much-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.much .much-container .much-item {
+    opacity: 0.6;
+    flex: 1 1 calc(30% - 5px);
+}
+
+.much .much-container .much-item:hover {
+    opacity: 1;
+}
+
+.much .much-container .much-item .much-head {
+    background-color: black;
+}
+
+
+.much .much-container .much-item .much-head h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    color: white;
+    padding: 28px;
+    text-align: center;
+}
+
+.much .much-container .much-item .much-body {
+    background-color: white;
+    color: gray;
+}
+
+.much .much-container .much-item .much-body>span {
+    display: block;
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+.much .much-container .much-item .much-body .span {
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.much .much-container .much-item .much-body .span span {
+    font-size: 2.5em;
+}
+
+.much .much-container .much-item .much-ftr {
+    padding: 26px;
+    background-color: #ddd;
+}
+
+.much .much-container .much-item .much-ftr button {
+    display: block;
+    margin: auto;
+    background-color: white;
+    border: none;
+    padding: 16px 26px;
+    cursor: pointer;
+}
+
+.much .much-container .much-item .much-ftr button:hover {
+    background-color: #9E9E9E;
+    color: white;
+}
+
+.contact {
+    padding: 20px;
+    margin-top: 15px;
+    width: min(100%, calc(700px + 20px + 20px));
+    margin: auto;
+    color: gray;
+}
+
+.contact h2 {
+    text-align: center;
+    padding: 16px;
+    font-size: xx-large;
+    font-weight: normal;
+}
+
+.contact p {
+    font-size: larger;
+    padding: 16px 0;
+}
+
+.contact strong {
+    font-weight: normal;
+    font-size: larger;
+}
+
+.contact input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border: 1px solid grey;
+}
+
+.contact input[type=submit] {
+    background-color: black;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.contact input[type=submit]:hover {
+    background-color: gray;
+    color: black;
+}
+
+footer .ftr {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: black;
+    background-color: gray;
+}
+
+footer ul,
+footer ol {
+    flex: 0 0 30%;
+    list-style-type: none;
+}
+
+footer ul li h2,
+footer ol li h2 {
+    font-weight: normal;
+    padding: 8px 0;
+}
+
+footer ul li p {
+    padding: 8px 0;
+    line-height: 1.3;
+}
+
+footer ul li p a {
+    color: inherit;
+}
+
+
+footer ul:nth-child(2) li:not(:first-child) {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    padding: 16px 12px;
+    width: 100%;
+}
+
+footer ul li img {
+    width: 50px;
+}
+
+footer ul:nth-child(2) li:not(:first-child):hover {
+    background-color: black;
+    color: white;
+}
+
+footer ul li .hdr {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+footer ul li .hdr h4 {
+    font-weight: 100;
+}
+
+
+
+footer ol li span {
+    background-color: rgb(90, 88, 88);
+    padding: 3px 5px;
+    color: white;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+footer ol li span:first-child {
+    background-color: black;
+    padding: 5px 5px;
+}
+
+footer .footer {
+    padding: 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+footer .footer p a {
+    color: inherit;
+}
+
+@media (max-width: 992px) {
+    aside {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    main .container .item {
+        flex: 1 1 100%;
+    }
+
+    .much .much-container .much-item {
+        flex: 1 1 100%;
+    }
+
+    footer .ftr ul,
+    footer .ftr ol {
+        padding: 5px 20px;
+        flex: 1 1 100%;
+    }
+
+}
